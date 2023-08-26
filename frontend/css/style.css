@@ -123,6 +123,20 @@ body:after {
   font-family: sans-serif !important;
 }
 
+.log2 {
+  font-weight: 900;
+  font-size: 2rem;
+  color: #fff;
+  font-family: sans-serif !important;
+}
+
+.log-2 {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #fff;
+  font-family: sans-serif !important;
+}
+
 .btn-p {
   border-radius: 2rem;
   border: none;
