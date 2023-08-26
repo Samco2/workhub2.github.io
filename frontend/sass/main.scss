@@ -1,0 +1,35 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+
+@import "base/animation";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+@import "base/media";
+
+//@import "components/team";
+@import "components/buttons";
+@import "components/card";
+@import "components/blog";
+@import "components/coursel";
+@import "components/form";
+
+//@import "components/story";
+
+
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/nav";
+@import "layout/slider";
+@import "layout/slide";
+
+
+
+@import "pages/home";
+@import "pages/contact";
+@import "pages/feature";
+@import "pages/reput";
+@import "pages/product";

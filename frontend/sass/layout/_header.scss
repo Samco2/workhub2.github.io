@@ -1,0 +1,243 @@
+/*------Slider-------*/
+
+.slider-con{
+    position: relative;
+    flex-basis: 35%;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    // background: rgb(25,12,41);
+    padding-left: 2rem;
+    overflow: hidden;
+    
+    
+    
+
+
+}
+.slider-wrapper{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+
+
+.slider-holder{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    border-radius:2rem;
+    height:45rem;
+    input{
+        display: none;
+        
+    }
+    
+    
+    [class^="m"] {
+        width:100%;
+        animation:slide 15s ease infinite;
+        
+        
+        
+        .dsgn{
+            background-color: $color-white;
+            position: relative;
+            top: -11rem;
+            left:27rem;
+            z-index: 5;
+            border-radius: 1rem;
+            width:25%;
+            color:$color-black-cap;
+            text-align: center;
+            font-size: 1rem;
+        
+            
+            img{
+                width: 6rem;
+                border-radius: 50%;
+                margin-top: 0.5rem;
+                
+            }
+            h4{
+                font-weight: 900;   
+            }
+            
+        }
+
+    }
+   
+}
+
+.img-s{
+    width:45rem;
+    transition: all 0.15s ease;
+    border-radius: 2rem;
+    
+
+}
+
+/* dot arrangement */
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    
+    
+
+
+/* Dot dimensions and identifyer */
+
+    label {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        border: solid #fff 3px;
+        cursor: pointer;
+        transition: all 0.15s ease;
+        margin: 5px;
+        background-color: #D2D8E4;
+    }
+
+    
+}
+.dots label:hover {background: orange;}
+
+
+#prdt1:checked ~ .m1 {
+    margin-left: 0;
+}
+#prdt2:checked ~ .m2 {
+    margin-left: -100%;
+}
+#prdt3:checked ~ .m3 {
+    margin-left: -200%;
+}
+#prdt4:checked ~ .m4 {
+    margin-left: -300%;
+}
+#prdt5:checked ~ .m5 {
+    margin-left: -400%;
+}
+#prdt6:checked ~ .m6 {
+    margin-left: -500%;
+}
+
+
+
+
+
+@keyframes slide{
+    0%{transform:translateX(-00%)}
+    10%{transform:translateX(-000%)}
+    20%{transform:translateX(-100%)}
+    30%{transform:translateX(-100%)}
+    40%{transform:translateX(-200%)}
+    50%{transform:translateX(-200%)}
+    60%{transform:translateX(-300%)}
+    70%{transform:translateX(-300%)}
+    80%{transform:translateX(-400%)}
+    85%{transform:translateX(-400%)}
+    87%{transform:translateX(-500%)}
+    100%{transform:translateX(-500%)}
+}
+
+
+
+
+
+
+.test{
+    margin: 0 auto;
+    img{
+        width:6rem;
+        border-radius:50%;
+    }
+    &-icon{
+        width: 3rem;
+        height: 3rem;
+        fill: $color-grey;
+    }
+
+    &__dsgn{
+        display:flex;
+        justify-content: flex-start;
+        padding: 2rem;
+
+    }
+
+    &__txt{
+        align-self: flex-end;
+        padding:0 1rem;
+        text-align: left;
+        // float: left;
+        h4{
+            color:$color-text-black;
+        }
+    }
+   
+}
+
+#slider,
+.wrap,
+.slide-content {
+    margin: 0 auto;
+    padding: 0 2rem;
+    font-family: raleway, sans-serif;
+    width: 90%;
+    overflow-x: hidden;
+}
+
+.wrap {
+  position: relative;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-content span {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 10%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent #fff transparent transparent;
+  left: 5rem;
+  margin-left: 30px;
+}
+
+#arrow-right {
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent #fff;
+  right: 5rem;
+  margin-right: 30px;
+}
+
+  

@@ -1,0 +1,121 @@
+
+/* DROP DOWN MENU START */
+.nav{
+    background-color: $color-white;
+    height: 7rem;
+    display: flex;
+    gap: 10rem;
+    align-items: center;
+    justify-content: space-around;
+    color: $color-black;
+    font-family: Roboto;
+    border-bottom: 1px solid #F6F6F6 ;
+    color: $color-black;
+    padding-right: 2rem;
+
+    &_main{
+        display: flex;
+        gap: 3rem;
+        list-style: none;
+        
+
+        a{
+            display: block;
+            font-family: sans-serif !important;
+            color: $color-black;
+            font-size: $default-font-size;
+            font-weight: 500;
+            padding: 0 1rem !important;
+            text-decoration: none;
+
+            span{
+                font-size:2rem; 
+                font-family: Roboto;
+            }
+
+          
+        }
+
+
+
+    }
+    &-search{
+        // flex-basis: 40%;
+        align-self: center;
+        justify-content: center;
+        // position: relative;
+        flex-grow: 1;
+    
+        
+        
+
+        input{
+            width:80%;
+            height: 4rem;
+            font-size: $default-font-size;
+            border-radius: 0.5rem;
+            border:2px solid $color-outline;
+            background-color: grayscale($color: hsl(0, 0%, 100%));
+           padding-left: 4rem;
+
+
+            :focus,
+            :visited,
+            :hover{
+                border:2px solid $color-outline-deep; 
+            }
+            
+            
+        }
+
+        button{
+            outline: none;
+            border:none;
+            background-color: $color-white;
+            position: relative;
+            float: left;
+            top:1rem;
+            left:3rem;
+            cursor: pointer;
+
+
+            svg{
+                width: 2rem;
+                height: 2rem; 
+            }
+
+            
+        }
+    }
+   
+
+   
+}
+
+.bg{
+    a{
+        &:focus,
+        &:active,
+        &:hover,
+        &:focus-visible {
+            outline:none;
+            box-shadow: 0 1rem 2rem rgba ($color-white-text, .1);
+            border-bottom: 2px solid $color-primary;
+            
+            
+            
+            
+        }
+    }
+    
+
+}
+
+.nav2{
+    display: flex;
+    justify-content: space-between;
+    padding:2rem 2rem;
+    list-style: None;
+    color: $color-black; 
+}
+/* DROP DOWN MENU END */

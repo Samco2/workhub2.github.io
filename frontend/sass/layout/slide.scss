@@ -1,0 +1,92 @@
+.wrapp {
+    // max-width: 1100px;
+    width: 100%;
+    position: relative;
+
+    
+}
+.wrapp i{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 5rem;
+    height: 5rem;
+    // border-style: solid;
+    // border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+
+}
+.wrapp i:active{
+    transform: translateY(-50%) scale(0.85);
+}
+
+.wrapp i:first-child{
+    left: -2rem;
+}
+  .wrapp i:last-child{
+    right: -2rem;
+}
+
+#lef {
+    border-width: 30px 40px 30px 0;
+    border-color: transparent #fff transparent transparent;
+    left: -5rem;
+    margin-left: 30px;
+    z-index: 1;
+  }
+  
+  #righ {
+    border-width: 30px 0 30px 40px;
+    border-color: transparent transparent transparent #fff;
+    right: -5rem;
+    margin-right: 30px;
+    z-index: 1;
+  }
+  .test-icon {
+    width: 5rem;
+    height: 5rem;
+    fill: $color-outline;
+    border-radius: 50%;
+    padding:0rem;
+}
+
+.wrapp .carous{
+   display: flex;
+//    grid-auto-flow: column;
+   overflow-x: auto;
+   scroll-snap-type: x mandatory;
+   gap: 2rem;
+   border-radius: 8px;
+   scroll-behavior: smooth;
+   scrollbar-width: none;
+}
+.carous::-webkit-scrollbar {
+    display: none;
+}
+.carous.no-transition {
+    scroll-behavior: auto;
+}
+.carous.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+.carous.dragging .car {
+    cursor: grab;
+    user-select: none;
+}
+.carous .car {
+    scroll-snap-align: start;
+    height: 100vw px;
+    list-style: none;
+    cursor: pointer;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border-radius: 8px;
+
+    img{
+        width: 22rem;
+        height: 22rem;
+    }
+}

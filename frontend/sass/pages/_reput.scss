@@ -1,0 +1,112 @@
+.rpt{
+    background-color: $color-backgroung-light;
+    color:  $color-white;
+    margin-bottom: 4rem;
+    overflow-y: hidden;
+}
+.itm{
+     flex-basis: 30%;
+     padding-left: 2rem;
+     margin: 4rem 0;
+     font-family: Roboto;
+     
+
+
+    
+
+    &-icon{
+
+        &-1{
+            width:3rem;
+            height:3rem;
+            fill:$color-white;
+            margin-left: 2rem;
+            
+
+        }
+
+        &-2{
+            width:3rem;
+            height:3rem;
+            fill:$color-white;
+            margin-right: 2rem;
+
+        }
+    }
+
+    button{
+        margin: 2rem 0rem 0 4.5rem;
+        padding: 1.5rem;
+        color: $color-white;
+        font-weight: 600;
+        background-color: $color-btn;
+        outline: none;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+
+    }
+    button:hover{
+        background-color: $color-hub ;
+    }
+
+    &-objl{
+        flex: 0 0 25%;
+        align-self:center;
+        
+        img{
+            position: relative;
+            top: 11rem;
+            left: 12rem;
+            z-index: 2;
+        } 
+
+        span{
+            background-color: $color-head-circle;
+            border-radius: 50%;
+            padding: 10rem;
+            position: relative;
+            top: -16rem;
+            left: 12.5rem;
+
+        }
+    }
+
+    &-txt{
+        display: flex;
+        h4{
+            font-weight: 400;
+
+        }
+        p{
+            font-weight: 300;
+        }
+    
+        
+       
+       
+
+        &-p{
+            margin-bottom: 2rem;
+            h4,
+            p{
+                // align-self: flex-end;
+                text-align: right;
+                padding-left: 6rem;
+                
+                
+            }
+        }
+
+        &-p2{
+            margin-bottom: 2rem;
+            h4,
+            p{
+                padding-right: 6rem;
+                
+            }
+        }
+
+    }
+}
+

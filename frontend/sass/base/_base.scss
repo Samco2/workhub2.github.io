@@ -1,0 +1,49 @@
+*, 
+*::after,
+ *::before {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    @include respond(tab-land) {// width <1200px
+      font-size: 56.25%; // 1 rem = 9px; 9/16= 56.25%
+    }
+    @include respond(tab-port) { // width <900px
+      font-size: 80%; // 1 rem = 8px; 8/16= 50%
+    }
+    @include respond(big-desktop) {
+      font-size: 80%; // 1 rem = 12px; 12/16= 75%
+    } 
+    overflow-x: hidden;
+  }
+
+::selection {
+    background: $color-white;
+    color: $color-grey;
+  }
+
+
+body {
+  line-height: 1.7;
+  color: $color-grey;
+  font-weight: 400;
+  font-size: $default-font-size; 
+  box-sizing: border-box;
+  background-color: $color-white;
+
+  @include respond(tab-port) { // width <900px
+     padding: 0; 
+ }
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+

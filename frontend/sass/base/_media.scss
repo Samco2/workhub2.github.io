@@ -1,0 +1,80 @@
+.post{
+    background-color: $color-backgroung-light;
+    // height: 20rem;
+    
+    h2{
+        margin: 4rem;
+        // color: $color-white;
+    }
+
+    button{
+        padding: 1.5rem;
+        color: $color-backgroung-light;
+        background-color:$color-white;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 1.8rem;
+        margin-bottom: 4rem;
+        border: 1px solid $border-line;
+        border-radius: 0.5rem;
+
+    }
+    button:hover{
+        background-color: $color-hub;
+        border: 0.5px solid $border-line;
+        color: $color-white;
+    }
+}
+.browse{
+    margin:0 auto;
+
+    h2,
+    h4{
+        color: $color-text-black;
+    }
+
+    &_itms{
+        display:flex;
+        align-content: stretch;
+        justify-content:space-around;
+
+        ul{
+            list-style: none;
+            
+        }
+        li{
+            a{
+                text-decoration: none;
+                color:$color-grey;
+                font-size: $default-font-size;
+                font-weight: 400;
+                cursor: pointer;
+
+            }
+            a:hover{
+                background-color: $color-read-more;
+                padding: 1rem;
+                color: $color-white;
+            }
+        }
+
+    }
+
+    button{
+        color:$color-read-more;
+        background-color: $color-white;
+        padding:1rem;
+        font-size: 1.6rem;
+        margin: 4rem 0;
+        border:1px solid $color-read-more; 
+        cursor: pointer;
+    }
+
+    button:hover{
+        background-color: $color-read-more;
+        color:$color-white;
+
+    }
+}

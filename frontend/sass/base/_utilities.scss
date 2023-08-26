@@ -1,0 +1,73 @@
+.site-pad {
+    padding: 5em 0;
+}
+.log{
+    font-weight: 900;
+    font-size: 2rem;
+    color:$color-logo;
+    font-family: sans-serif !important;
+}
+
+.btn-p{
+    // padding: 0.5rem;
+    border-radius:2rem;
+    border:none;
+    cursor: pointer;
+    font-size: $default-font-size;
+    padding:1rem 2rem;
+    color: $color-black;
+    font-weight: 600;
+    
+    :hover{
+        background-color: $color-primary;
+        color: white;
+        border-radius:2rem;
+
+    }
+
+}
+
+
+.btn-p:hover{
+    background-color: $color-primary;
+    color: white;
+    border-radius:2rem;
+}
+
+.bg{
+    border:1px solid $color-black !important;
+}
+.mg-t{
+    margin-top:2rem;
+}
+.mg{
+    margin: 4rem 0rem;
+}
+
+.mb-4 {
+    margin-bottom: 3rem!important;
+}
+
+.mb-2 {
+    margin-bottom: 2rem!important;
+}
+.img-c{
+    width:100;
+}
+
+.mb-5 {
+    margin-bottom: 5rem;
+}
+.d-fl {
+    display: flex!important;
+}
+.align{
+    align-items: center;
+    justify-content: center;
+}
+ .mgt-5{
+    margin-top: 5rem;
+}
+.blck{
+    color: $color-black;
+}
