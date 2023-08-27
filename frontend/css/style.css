@@ -1020,6 +1020,7 @@ footer hr {
   color: #fff;
   margin-bottom: 4rem;
   overflow-y: hidden;
+  height: 67rem;
 }
 
 .itm {
@@ -1057,20 +1058,25 @@ footer hr {
 .itm-objl {
   flex: 0 0 25%;
   align-self: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .itm-objl img {
   position: relative;
-  top: 11rem;
-  left: 12rem;
+  top: -2rem;
+  left: 2rem;
   z-index: 2;
+  align-self: center;
 }
 .itm-objl span {
   background-color: #0E253B;
   border-radius: 50%;
   padding: 10rem;
+  align-self: center;
   position: relative;
-  top: -16rem;
-  left: 12.5rem;
+  top: 15rem;
+  left: 0rem;
 }
 .itm-txt {
   display: flex;
